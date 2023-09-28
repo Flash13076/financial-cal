@@ -65,7 +65,10 @@ const Calculator = () => {
     <>
       <Head>
         <title>Financial Calculator</title>
-        <meta name="description" content="Financial Calculator" />
+        <meta
+          name="description"
+          content="Financial Calculator,initial-scale =1"
+        />
         <link rel="icon" href="/head.png" />
       </Head>
 
@@ -80,7 +83,11 @@ const Calculator = () => {
         boxShadow="0 2px 4px rgba(0, 0, 0, 0.1)"
         sx={{ py: 4, px: 4 }}
       >
-        <Typography variant="h5" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 23, sm: 28 } }}
+          variant="h5"
+          gutterBottom
+        >
           Compound Interest Calculator
         </Typography>
         <TextField
@@ -133,6 +140,7 @@ const Calculator = () => {
         </FormControl>
         <Box
           sx={{
+            pt: 1,
             display: "flex",
             flexDirection: { sm: "row", xs: "column" },
             alignItems: "center",
@@ -145,7 +153,11 @@ const Calculator = () => {
             variant="contained"
             color="primary"
             onClick={calculateCompoundInterest}
-            style={{ marginTop: "16px" }}
+            sx={{
+              mt: "16px",
+              maxWidth: { sm: "100%", sm: 110 },
+              width: "100%",
+            }}
           >
             Compound interest
           </Button>
@@ -154,7 +166,11 @@ const Calculator = () => {
             variant="contained"
             color="primary"
             onClick={calculateSimpleInterest}
-            style={{ marginTop: "16px" }}
+            sx={{
+              mt: "16px",
+              maxWidth: { sm: "100%", sm: 110 },
+              width: "100%",
+            }}
           >
             Simple interest
           </Button>
@@ -163,7 +179,11 @@ const Calculator = () => {
             variant="contained"
             color="primary"
             onClick={calculateFutureValue}
-            style={{ marginTop: "16px" }}
+            sx={{
+              mt: "16px",
+              maxWidth: { sm: "100%", sm: 110 },
+              width: "100%",
+            }}
           >
             Future value
           </Button>
@@ -175,7 +195,11 @@ const Calculator = () => {
 
         <p></p>
         <p></p>
-        <Typography variant="h5" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 23, sm: 28 } }}
+          variant="h5"
+          gutterBottom
+        >
           Retirement Fund Calculator
         </Typography>
         <TextField
@@ -220,15 +244,20 @@ const Calculator = () => {
             width: "80%",
             gap: 1,
           }}
-        ></Box>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={calculateRetirementFund}
-          style={{ marginTop: "16px" }}
         >
-          Calculate monthly investment
-        </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={calculateRetirementFund}
+            sx={{
+              mt: "16px",
+              maxWidth: { sm: "100%", sm: 110 },
+              width: "100%",
+            }}
+          >
+            Calculate monthly investment
+          </Button>
+        </Box>
 
         <Typography variant="h6" style={{ marginTop: "16px" }}>
           Necessary investement: {outputRet}
