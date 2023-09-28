@@ -65,11 +65,8 @@ const Calculator = () => {
     <>
       <Head>
         <title>Financial Calculator</title>
-        <meta
-          name="description"
-          content="Financial Calculator,initial-scale =1"
-        />
-        <link rel="icon" href="/head.png" />
+        <meta name="description" content="Financial Calculator," />
+        <link rel="icon" href="/head.png" sizes="32x32" />
       </Head>
 
       <Box
