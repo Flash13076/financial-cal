@@ -164,7 +164,7 @@ const Calculator = () => {
             onClick={calculateSimpleInterest}
             sx={{
               mt: "16px",
-              maxWidth: { sm: "100%", sm: 110 },
+              maxWidth: { sm: 110 },
               width: "100%",
             }}
           >
@@ -177,7 +177,7 @@ const Calculator = () => {
             onClick={calculateFutureValue}
             sx={{
               mt: "16px",
-              maxWidth: { sm: "100%", sm: 110 },
+              maxWidth: { sm: 110 },
               width: "100%",
             }}
           >
@@ -237,7 +237,7 @@ const Calculator = () => {
             flexDirection: { sm: "row", xs: "column" },
             alignItems: "center",
             justifyContent: "space-between",
-            width: "80%",
+            px: 1,
             gap: 1,
           }}
         >
@@ -247,8 +247,6 @@ const Calculator = () => {
             onClick={calculateRetirementFund}
             sx={{
               mt: "16px",
-              maxWidth: { sm: "100%", sm: 110 },
-              width: "100%",
             }}
           >
             Calculate monthly investment
