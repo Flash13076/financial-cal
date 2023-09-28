@@ -85,7 +85,7 @@ const Calculator = () => {
           variant="h5"
           gutterBottom
         >
-          Compound Interest Calculator
+          Financial Calculator
         </Typography>
         <TextField
           fullWidth
@@ -113,7 +113,7 @@ const Calculator = () => {
         />
         <TextField
           fullWidth
-          label="Duration of investement(Y)"
+          label="Investment duration (years)"
           variant="outlined"
           type="number"
           value={input3}
@@ -182,7 +182,7 @@ const Calculator = () => {
               width: "100%",
             }}
           >
-            Future value
+            Multiple payments
           </Button>
         </Box>
 
