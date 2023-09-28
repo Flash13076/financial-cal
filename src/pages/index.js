@@ -24,8 +24,8 @@ const Calculator = () => {
   const [outputRet, setOutputRet] = useState("");
 
   const calculateCompoundInterest = () => {
-    let value = parseInt(input1);
-    let time = parseInt(input3);
+    let value = parseFloat(input1);
+    let time = parseFloat(input3);
     let interval = parseInt(input4);
     let percentage = parseFloat(input2 / input4);
     setOutput(
@@ -34,17 +34,16 @@ const Calculator = () => {
   };
 
   const calculateSimpleInterest = () => {
-    let value = parseInt(input1);
-    let time = parseInt(input3 * input4);
-    let interval = parseInt(input4);
+    let value = parseFloat(input1);
+    let time = parseFloat(input3 * input4);
     let percentage = parseFloat(input2 / input4);
     setOutput((value * (1 + (percentage / 100) * time)).toFixed(2));
   };
 
   const calculateFutureValue = () => {
-    let value = parseInt(input1);
+    let value = parseFloat(input1);
     let percentage = parseFloat(input2 / 100);
-    let time = parseInt(input3);
+    let time = parseFloat(input3);
     let interval = parseInt(input4);
     let period = percentage / interval;
     setOutput(
@@ -55,9 +54,9 @@ const Calculator = () => {
   };
 
   const calculateRetirementFund = () => {
-    let value = parseInt(input5);
+    let value = parseFloat(input5);
     let percentage = parseFloat(input6 / 1200);
-    let time = parseInt(input7 * 12);
+    let time = parseFloat(input7 * 12);
     setOutputRet((value / (Math.pow(1 + percentage, time) - 1)).toFixed(2));
   };
 
@@ -66,7 +65,7 @@ const Calculator = () => {
       <Head>
         <title>Financial Calculator</title>
         <meta name="description" content="Financial Calculator," />
-        <link rel="icon" href="/head.png" sizes= "2x2"/>
+        <link rel="icon" href="/head.png" sizes="2x2" />
       </Head>
 
       <Box
